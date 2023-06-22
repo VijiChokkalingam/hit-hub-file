@@ -12,10 +12,16 @@ import LandPage from './Components/pages/landPage';
 import LifeCycleMethods from "./Components/pages/lifeCycleMethods";
 import Edit from "./Components/pages/edit";
 import UseCallback from "./Components/pages/useCallback";
-
+import Login from "./Components/pages/login";
+import AuthenticationPage ,{action as authentication }from "./Components/pages/authenticationPage";
 
 function App() {
 const router = createBrowserRouter([
+  {
+    path:"login",
+    element:<AuthenticationPage/>,
+    action:authentication
+  },
   {
     path:"",
     element:<RootLayout/>,
