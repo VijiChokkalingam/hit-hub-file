@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     action:authentication
   },
   {
-    path:"",
+    path:"hit-hub-file",
     element:<RootLayout/>,
     errorElement:<PageNotFound/>,
     children:[
